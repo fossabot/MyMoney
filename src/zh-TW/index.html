@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../resource/favicon.ico">
-    <title>最近10筆支出|MyMoney</title>
+    <title>首頁|MyMoney</title>
     <link href="../css/tether.min.css" rel="stylesheet">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/semantic.min.css">
@@ -26,9 +26,9 @@
         <a class="navbar-brand" href="index.html">MyMoney</a>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link" href="index.html">首頁</a>
+                <a class="nav-item nav-link active" href="index.html">首頁 <span class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link" href="add.html">記帳</a>
-                <a class="nav-item nav-link active" href="10-expense.html">最近10筆支出 <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="10-expense.html">最近10筆支出</a>
                 <a class="nav-item nav-link" href="search.html">支出查詢</a>
             </div>
             <div class="btn-group">
@@ -45,21 +45,24 @@
     </nav>
     <div class="ui container">
         <div class="ui page-header">
-            <h1 class="text-center">最近10筆支出</h1>
+            <br>
+            <h1 class="text-center">MyMoney</h1><br>
         </div>
-        <table class="ui selectable celled table">
-            <thead>
-                <tr>
-                    <th>日期</th>
-                    <th>項目</th>
-                    <th>金額</th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
-        <a href="index.html"><button class="ui button">返回</button>
+        <form class="ui form">
+            <div class="field">
+                <a href="add.html"><button class="ui blue massive fluid button" type="button">記帳</button></a>
+            </div>
+            <div class="field">
+                <a href="10-expense.html"><button class="ui blue massive fluid button" type="button">最近10筆支出</button></a>
+            </div>
+            <div class="field">
+                <a href="search.html"><button class="ui blue massive fluid button" type="button">支出查詢</button></a>
+            </div>
+        </form>
     </div>
+    <script>
+        if (typeof module === 'object') { window.module = module; module = undefined; }
+    </script>
     <script src="../js/jquery.min.js"></script>
     <script src="../js/tether.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
@@ -67,6 +70,9 @@
     <script src="../js/ie10-viewport-bug-workaround.js"></script>
     <script src="../js/fdb-all.min.js"></script>
     <script src="../js/main.min.js"></script>
-    <script src="../js/10-expense.min.js"></script>
+    <script>
+        if (window.module) module = window.module;
+    </script>
 </body>
+
 </html>

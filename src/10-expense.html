@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="resource/favicon.ico">
-    <title>Home|MyMoney</title>
+    <title>Recent 10 Expenses|MyMoney</title>
     <link href="css/tether.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
@@ -26,9 +26,9 @@
         <a class="navbar-brand" href="index.html">MyMoney</a>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="index.html">Home</a>
                 <a class="nav-item nav-link" href="add.html">Record An Expense</a>
-                <a class="nav-item nav-link" href="10-expense.html">Recent 10 Expenses</a>
+                <a class="nav-item nav-link active" href="10-expense.html">Recent 10 Expenses <span class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link" href="search.html">Expenses Search</a>
             </div>
             <div class="btn-group">
@@ -45,21 +45,24 @@
     </nav>
     <div class="ui container">
         <div class="ui page-header">
-            <br>
-            <h1 class="text-center">MyMoney</h1><br>
+            <h1 class="text-center">Recent 10 Expenses</h1>
         </div>
-        <form class="ui form">
-            <div class="field">
-                <a href="add.html"><button class="ui blue massive fluid button" type="button">Record An Expense</button></a>
-            </div>
-            <div class="field">
-                <a href="10-expense.html"><button class="ui blue massive fluid button" type="button">Recent 10 Expenses</button></a>
-            </div>
-            <div class="field">
-                <a href="search.html"><button class="ui blue massive fluid button" type="button">Expenses Search</button></a>
-            </div>
-        </form>
+        <table class="ui selectable celled table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Item Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <a href="index.html"><button class="ui button">Back</button>
     </div>
+    <script>
+        if (typeof module === 'object') { window.module = module; module = undefined; }
+    </script>
     <script src="js/jquery.min.js"></script>
     <script src="js/tether.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -67,6 +70,9 @@
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script src="js/fdb-all.min.js"></script>
     <script src="js/main.min.js"></script>
+    <script src="js/10-expense.min.js"></script>
+    <script>
+        if (window.module) module = window.module;
+    </script>
 </body>
-
 </html>

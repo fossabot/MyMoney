@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../resource/favicon.ico">
-    <title>支出查詢|MyMoney</title>
+    <title>最近10筆支出|MyMoney</title>
     <link href="../css/tether.min.css" rel="stylesheet">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/semantic.min.css">
@@ -28,8 +28,8 @@
             <div class="navbar-nav">
                 <a class="nav-item nav-link" href="index.html">首頁</a>
                 <a class="nav-item nav-link" href="add.html">記帳</a>
-                <a class="nav-item nav-link" href="10-expense.html">最近10筆支出</a>
-                <a class="nav-item nav-link active" href="search.html">支出查詢 <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active" href="10-expense.html">最近10筆支出 <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="search.html">支出查詢</a>
             </div>
             <div class="btn-group">
                 <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -45,34 +45,24 @@
     </nav>
     <div class="ui container">
         <div class="ui page-header">
-            <h1 class="text-center">支出查詢</h1>
+            <h1 class="text-center">最近10筆支出</h1>
         </div>
-        <form class="ui form">
-            <input type="radio" name="mode" value="thisMonth"> 本月份
-            <br>
-            <input type="radio" name="mode" value="period"> 指定期間
-            <br>從
-            <input id="from" class="input-field" type="date">到<input id="to" class="input-field" type="date">
-            <br><br>
-            <button class="ui blue button" type="button" id="submit">查詢</button>
-            <a href="index.html"><button class="ui button" type="button">返回</button>
-        </form>
-
-
-
-        <table id="expenses" class="ui table">
-          <thead>
-            <tr>
-              <th>日期</th>
-              <th>項目</th>
-              <th>金額</th>
-            </tr>
-          </thead>
-          <tbody>
-          </tbody>
+        <table class="ui selectable celled table">
+            <thead>
+                <tr>
+                    <th>日期</th>
+                    <th>項目</th>
+                    <th>金額</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
         </table>
-      </div>
+        <a href="index.html"><button class="ui button">返回</button>
     </div>
+    <script>
+        if (typeof module === 'object') { window.module = module; module = undefined; }
+    </script>
     <script src="../js/jquery.min.js"></script>
     <script src="../js/tether.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
@@ -80,6 +70,9 @@
     <script src="../js/ie10-viewport-bug-workaround.js"></script>
     <script src="../js/fdb-all.min.js"></script>
     <script src="../js/main.min.js"></script>
-    <script src="../js/search.min.js"></script>
+    <script src="../js/10-expense.min.js"></script>
+    <script>
+        if (window.module) module = window.module;
+    </script>
 </body>
 </html>
