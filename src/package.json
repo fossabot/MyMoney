@@ -1,6 +1,6 @@
 {
   "name": "mymoney",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "",
   "main": "main.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/edisonlee55/MyMoney-PC.git"
+    "url": "git+https://github.com/edisonlee55/MyMoney.git"
   },
   "keywords": [
     "MyMoney",
@@ -18,8 +18,8 @@
   "author": "Edison Lee",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/edisonlee55/MyMoney-PC/issues"
+    "url": "https://github.com/edisonlee55/MyMoney/issues"
   },
-  "homepage": "https://github.com/edisonlee55/MyMoney-PC#readme",
+  "homepage": "https://github.com/edisonlee55/MyMoney#readme",
   "dependencies": {}
 }
